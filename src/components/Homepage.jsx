@@ -4,9 +4,15 @@ import { Typography,Row , Col, Statistic } from 'antd'
 import {Link} from 'react-router-dom'
 import Cryptocurrencies from './CryptoCurrencies';
 
+import {useGetCryptosQuery} from '../services/CryptoApi'
+
 const {Title} = Typography;
 
 const Homepage =() =>{
+    const { data, isFetching } = useGetCryptosQuery();
+    
+    if (isFetching) return 'Loading ...'
+
     return (
         <>
            <Title level={2} className='heading'>Global Crypto Stats </Title>
