@@ -14,10 +14,22 @@
     box-sizing: border-box;
 }
 
-.heading{
-    margin-left: 11rem;
+.heading,.home-heading-container{
+    margin-left: 11.4rem;
     justify-content: center;
     align-items: center;
+}
+.crypto-card-container{
+    margin-left: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+.crypto-card{
+    margin: .3rem
+}
+
+.crypto-card img{
+    max-width: 1.7rem;
 }
 
 .statsRow{
