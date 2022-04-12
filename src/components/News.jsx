@@ -5,14 +5,28 @@ import moment from 'moment'
 import {useGetCryptoNewsQuery} from '../services/CryptoNewsApi'
 
 const{Text,Title} = Typography;
-const {Option} = Select
+const {Option} = Select;
 
-const News = ({simplfied}) =>{
-    const{data: cryptoNews} = useGetCryptoNewsQuery({newsCategory:'Cryptocurrency',count: simplfied ? 10:100})
-    console.log(cryptoNews)
+const News = ({simplified}) =>{
+   
+    const {data: cryptoNews} = useGetCryptoNewsQuery({newsCategory:"Cryptocurrency", count: simplified? 6:12})
+    
+    if(!cryptoNews?.value) return 'Loading...'
     return (
         <div>
-               <span>News </span>
+               <Row gutter={[24,24]}>
+                   {cryptoNews.value.map((news,i)=>(
+                       <Col xs={24} sm={12} lg={8} key={i}>
+                        <Card hoverable className="news-card">
+                            <a href={news.url} target="_blank" rel="noreferrer">
+                                <div className="news-image-container">
+                                    <Title className='news-title' level={5}>{news.name}</Title>
+                                </div>
+                            </a>
+                        </Card>
+                       </Col>
+                   ))}
+               </Row>
         </div>
     )
 }
