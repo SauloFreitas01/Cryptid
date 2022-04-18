@@ -312,8 +312,17 @@ a:hover{
 .select-news{
     width: 180px;
 }
+.News-cards-container{
+    width: 70%;
+    margin-left: 12rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .news-card{
-    min-height: 300px !important;
+    min-height: 20rem !important;
+    
 }
 .news-image-container{
     display: flex !important;
