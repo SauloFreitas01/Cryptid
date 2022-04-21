@@ -1,7 +1,7 @@
 import {React, useState } from 'react'
 import {Route, Link, Routes} from 'react-router-dom';
 import {Layout, Typography, Space} from 'antd';
-import {Navbar, Homepage, Cryptocurrencies, CryptoDetails, News,Exchanges} from './components'
+import {Navbar, Homepage, Cryptocurrencies, CryptoDetails, News,} from './components'
 
 import './App.css' 
 const App = () => {
@@ -19,7 +19,6 @@ const App = () => {
             
             <Routes>
               <Route path="/" element={<Homepage />}/>
-              <Route path="/exchanges" element={<Exchanges />}/>
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />}/>
               <Route exact path="/crypto/:coinId" element={<CryptoDetails/>}/>
               <Route exact path="/news" element = {<News/>}/>
@@ -33,13 +32,17 @@ const App = () => {
         <div className='footer' >
          <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
             Cryptid <br/>
-            All rights reserved
+            Saulo Freitas - 2022 <br/>
+            
           </Typography.Title>
+           
+
           <Space>
            <Link to='/'>Home</Link>
-           <Link to='/exchanges'>Exchanges</Link>
            <Link to='/news'>News</Link>
-         </Space>   
+         </Space>
+
+           
         </div>
       </div>
        

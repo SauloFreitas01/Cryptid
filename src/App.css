@@ -4,7 +4,7 @@
     --bgPrimary:#fff;
    --bgSecondary: #F9F9F9;
    --pink: #0071bd;
-   --light-blue: #e6f7ff;
+   --light-blue: #333;
    --border: #d9d9d9;
 }
 
@@ -309,12 +309,17 @@ a:hover{
     }
 }
 
+.search-crypto{
+    position: relative;
+    left: -23%;
+}
+
 .select-news{
     width: 180px;
 }
 .News-cards-container{
     width: 70%;
-    margin-left: 12rem;
+    margin-left: 15rem;
     justify-content: center;
     align-items: center;
     
