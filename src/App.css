@@ -366,8 +366,12 @@ width: 70%;
         margin-left: 0px;
         margin-right: 10px;
     }
-
+    .nav-menu{
+        display: none;
+    }
     .nav-container{
+        position: relative;
+        top: 0;
         height: 8vh;
         position:fixed;
         width: 100%;

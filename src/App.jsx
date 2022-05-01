@@ -5,9 +5,11 @@ import {Navbar, Homepage, Cryptocurrencies, CryptoDetails, News,} from './compon
 
 import './App.css' 
 const App = () => {
+  const [menuIsVisible,SetMenuIsVisible] = useState(true)
+  
   return (
     <div className="App">
-      
+       <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/> 
       <div className="navbar">
         <Navbar />
       </div>
