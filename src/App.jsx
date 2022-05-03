@@ -1,7 +1,7 @@
 import {React, useState } from 'react'
 import {Route, Link, Routes} from 'react-router-dom';
 import {Layout, Typography, Space} from 'antd';
-import {Navbar, Homepage, Cryptocurrencies, CryptoDetails, News,} from './components'
+import {Navbar, Homepage, Cryptocurrencies,  News,} from './components'
 
 import './App.css' 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
   
   return (
     <div className="App">
-       <MenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/> 
+       
       <div className="navbar">
         <Navbar />
       </div>
@@ -22,7 +22,6 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Homepage />}/>
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />}/>
-              <Route exact path="/crypto/:coinId" element={<CryptoDetails/>}/>
               <Route exact path="/news" element = {<News/>}/>
 
             </Routes>
