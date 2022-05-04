@@ -228,7 +228,7 @@ a:hover{
 
 .search-crypto{
     position: relative;
-    left: -23%;
+    left: -22%;
 }
 
 .select-news{
@@ -255,8 +255,8 @@ width: 70%;
 }
 
 .news-image-container .img{
-    width:100px;
-    height:100px;
+    width:99px;
+    height:99px;
 }
 .news-card p{
     color: black;
@@ -334,37 +334,102 @@ width: 70%;
 
 @media screen and (max-width:1300px){
     .main{
-        margin-left: 50px;
+        margin-left: 0px;
+    }
+    .nav-container{
+        height: 100vh;
+    }
+
+    .search-crypto{
+        position: relative;
+        left: -18.8rem;
     }
 }
 
+
+
 @media screen and (max-width:1170px){
     .main{
-        margin-left: 50px;
+        margin-left: 0px;
+    }
+    .nav-container{
+        height: 100vh;
+    }
+
+    .news-card{
+        margin-top: 15px;
+        
+    }
+    .search-crypto{
+        position: relative;
+        left: -10.8rem;
     }
 }
 
 @media screen and (max-width:1000px){
-    .main{
-        margin-left: 100px;
+    .main{margin-left: 0px;}
+    .news-card{
+        width: 100%;
+    }
+
+    .nav-container{
+        height: 100vh;
+    }
+    
+    .search-crypto{
+        position: relative;
+        left: 5.5rem;
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:769px){ /* tablet view */
     .app{
         flex-direction: column;
         overflow: hidden;
+        margin-left: 0px;
     }
 
     .navbar{
         flex: 1;
     }
+    .heading{
+        display: flex;
+        position: relative;
+        left: -13%;        
+        
+    }
+    .statsRow{
+        display:flex;
+        justify-content: center;
+        align-items: space-between;
+        padding-left: 0px;
+    }
 
+    .home-heading-container{
+        margin-left: 0px;
+        margin-right: 3px;
+        padding: 2%;
+    }
+
+    .crypto-card-container{margin-left: 0px;}
+
+    .News-cards-container{
+        margin-left: 0px;
+        padding: 0%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .news-card{
+        position: relative;
+        left: 10rem;
+        width: 150%;
+    }
     .main{
         flex: 1;
         margin-top: 90px;
         margin-left: 0px;
-        margin-right: 10px;
+        margin-right: 0px;
     }
     .nav-menu{
         display: none;
@@ -393,6 +458,15 @@ width: 70%;
     .show-more{
         font-size: 1.3rem !important;
     }
+
+    .search-crypto{
+        position: relative;
+        left: 0;
+    }
+    .select-news{
+        position: relative;
+        left: 10rem;
+    }
 }
 
 
@@ -416,8 +490,61 @@ width: 70%;
         margin: 0;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 576px){
     .heading{
         margin-top: 20px;
+    }.news-card{
+        position: relative;
+        left: 10px;
+        width: 129%;
+    }
+    .heading{
+        display: flex;
+        margin-left: 0;        
+        
+    }
+    .statsRow{
+        
+        margin-left:0;
+        
+    }
+
+    .home-heading-container{
+        margin-left: 0px;
+        margin-right: 3px;
+        align-items: space-between;
+    }
+
+    .crypto-card{
+        max-width: 5rem;
+        margin-right: 5px;
+    }
+
+    .select-news{
+        position: relative;
+        left: .7rem;
+    }
+
+    .search-crypto{
+        position: relative;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .news-card{
+        position: relative;
+        left: 2rem;
+        width: 100%;
+    }
+
+    .select-news{
+        position: relative;
+        left: 2rem;
+    }
+    
+    .search-crypto{
+        position: relative;
+        left: 0;
     }
 }
