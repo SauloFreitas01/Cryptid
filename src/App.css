@@ -74,6 +74,7 @@ a:hover{
     width: 100%;
 }
 .logo{
+    text-align: center;
     margin:0 0 0 15px;
 }
 .logo a{
@@ -330,7 +331,17 @@ width: 70%;
     align-items: center;
 }
 
-
+.fa-bars {
+    color: #fff;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
 
 @media screen and (max-width:1300px){
     .main{
@@ -392,6 +403,9 @@ width: 70%;
     .navbar{
         flex: 1;
     }
+
+    
+
     .heading{
         display: flex;
         position: relative;
@@ -431,9 +445,7 @@ width: 70%;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .nav-menu{
-        display: none;
-    }
+    
     .nav-container{
         position: relative;
         top: 0;
@@ -467,6 +479,55 @@ width: 70%;
         position: relative;
         left: 10rem;
     }
+
+    .NavbarItems {
+        position: relative;
+      }
+    
+    .Nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        
+      }
+    
+      .nav-menu.active {
+        
+        left: 0;
+        opacity: 1;
+        
+        z-index: 1;
+      }
+    
+      
+    
+      .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+      }
+    
+      .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    
+      .fa-times {
+        color: #fff;
+        font-size: 2rem;
+      }
+    
 }
 
 
